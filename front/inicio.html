@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Css/Main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,200&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IWAIT</title>
+</head>
+<body>
+    <div class="main">
+        <header>
+    <nav>
+            <label class="logo"><img src="iwaitt-logo-v3-1.png" class="logo"></label>
+        <ul class="menu">
+            <li><a href="">Mi cuenta</a></li>
+            <li><a href="">Empresas</a></li>
+            <li><a href="">Más populares</a></li>
+            <li><a href="">Antes de tu viaje</a></li>
+            <li><a href="">In-airport</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>¡Descubre las mejores experiencias durante tu espera en el aeropuerto
+            de manera gratuita! 
+        </h1>
+        
+        <div class="text-container">
+            <button href="#" id="cta" class="cta">Planea tu viaje con nosotros</button>
+            <button type="submit" onclick="getLocation()" class="cta-form" id="botonlocalizar"  >Utiliza mi localizacion</button>
+        </div>
+        <div id="modal-container" class="modal-container">
+            <div class="modal modal-close">
+                <button class="close">X</button>
+                <div class="modal-datos">
+                    <h2 class="whitettl" id="texto">¡Planea tu viaje con nosotros!</h2>
+                    <form action="/Resultados.html">
+                        <div class="form">
+                    <select class="selection-place" id="ciudad">
+                        <option disabled selected>Ingresa tu destino</option>
+                        <option value="Bogota" name="Nombre">Bogota</option>
+                        <option value="Cali" name="Nombre">Cali</option>
+                        <option value="Cartagena" name="Nombre">Cartagena</option>
+                        <option value="Medellin" name="Nombre">Medellín</option>
+                    </select>
+                    <select class="selection-place" id="tiempo">
+                        <option disabled selected>Ingresa tus horas disponibles</option>
+                        <option value="lessdh" name="Tiempo">Menos de 2 horas</option>
+                        <option value="eqltr" name="Tiempo">3 horas</option>
+                        <option value="mortf" name="Tiempo">Más de 4</option>
+                    </select>
+                    
+                    <input type="date" class="selection-place-date" id="fecha">
+                    <div class="price-place">
+                        <label >Precio min</label>
+                    <input type="range" value="24" min="0" max="75000" name="PrecioMin" oninput="this.nextElementSibling.value = this.value" step="1000" id="valorminimo">
+                    <output>24</output>
+                    <label >Precio max</label>
+                    <input type="range" value="36" min="0" max="750000" name="PrecioMax" oninput="this.nextElementSibling.value = this.value" step="1000" id="valormaximo">
+                    <output>36</output>
+                    </div>
+                    <div class="prie-place">
+                        <label >Tiempo min</label>
+                    <input type="range" value="11" min="0" max="75" name="PrecioMin" oninput="this.nextElementSibling.value = this.value" step="1" id="tiempo_minimo">
+                    <output>11</output>
+                    <label >Tiempo max</label>
+                    <input type="range" value="24" min="0" max="75" name="PrecioMax" oninput="this.nextElementSibling.value = this.value" step="1" id="tiempo_maximo">
+                    <output>24</output>
+                    </div>
+                    <input type="text" id="demo" class="small" ></input>
+                    <input type="text" id="demo2" class="small" ></input>
+                    <div class="activity-selection-place">
+                    <input type="checkbox" id="Actividad" name="Actividad" class="Actividad" value="Alojamiento"><label>Alojamiento</label>
+                    <input type="checkbox" id="Actividad" name="Actividad2" class="Actividad" value="Complementarios"><label>Complementarios</label>
+                    <input type="checkbox" id="Actividad" name="Actividad3" class="Actividad"  value="Compras"><label>Compras</label>
+                    <input type="checkbox" id="Actividad" name="Actividad4" class="Actividad" value="Entretenimiento"><label>Entretenimiento</label>
+                    <div>
+                    <input type="checkbox" id="Actividad" name="Actividad5" class="Actividad" value="Gastronomia"><label>Gastronomía</label>
+                    <input type="checkbox" id="Actividad" name="Actividad6" class="Actividad" value="Ocio y turismo"><label>Ocio y turismo</label>
+                    <input type="checkbox" id="Actividad" name="Actividad7" class="Actividad" value="Otros"><label>Otros</label>
+                    </div>
+                    </div>
+                    
+                        <button type="submit" onclick="tryadsij()" class="cta-form" >Consultar</button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+        </header>
+    </div>
+</body>
+
+<script src="JavaScript/main.js"></script>
+</html>

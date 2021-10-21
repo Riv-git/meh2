@@ -1,0 +1,28 @@
+.divBoss{
+    display: flex;
+}
+.left{
+    width: 200px; 
+    font-size: 20px;
+}
+.right{
+    font-size: 20px;
+    flex-grow: 1;
+    margin-left: 60px;
+}
+.center {
+    margin: auto;
+    width: 50%;
+    
+    padding: 10px;
+}
+.purpleColor {
+    color: purple;
+}
+body{
+   background-image: url('../Images/fondo2.png');
+   
+  background-repeat: no-repeat; 
+  background-size: cover;
+  padding: 20px;
+}

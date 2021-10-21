@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    margin-left: 1.5vh;
+    width: 180px;
+    height: 45px;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../aeropuerto.jpg);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh;
+    background:#3472b833;
+}
+
+.menu{
+    display: flex;
+    font-family: 'Mulish', sans-serif;
+}
+
+.menu li{
+    list-style: none;
+    margin: 1vw;
+}
+
+.menu li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.menu li a:hover{
+    padding: 2px;
+    background: rgba(0, 0, 0, 0.274);
+    color: white;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.container{
+    margin-top: 15vh;
+    text-align: center;   
+    display: block;
+    padding: 5vh;
+}
+
+.text-container{
+    margin-top: 5vh;
+}
+
+.cta{
+    width: 25%;
+    border-radius: 15px;
+    background: #142b452c;
+    border: none;
+    width: 25%;
+    height: 5vh;
+    font-family: 'Rubik', sans-serif;
+    font-size: medium;
+}
+
+.cta:hover{
+    background: #142b456b;
+    transition: 0.7s ease all;
+    width: 26%;
+}
+
+h1{
+    font-size: 3vw;
+    font-family: 'Karla', sans-serif;
+    color: #061f3b;
+}
+
+.modal-container{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 150vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    width: 40%;
+    height: 45%;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    transition: transform 1s;
+    transform: translateX(0%);
+    border-radius: 10px;
+    background: #204f7ef1;
+}
+
+.modal-close{
+    transform: translateY(-200%);
+}
+
+.close{
+    font-size: smaller;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: rgb(179, 38, 38);
+    color: #fff;
+    line-height: 25px;
+    cursor: pointer;
+    border-radius: 40%;
+    transition: .3s ease all;
+}
+
+.close:hover{
+    color: rgb(88, 25, 25);
+    transition: .3s ease all;
+}
+
+.whitettl{
+    margin-top: 2em;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.selection-place{
+    margin-top: 2em;
+    padding: 4px 6px;
+    color: #333333;
+    background-color: #eeeeee;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.selection-place-date{
+    margin-top: 2em;
+    padding: 2px 4px;
+    color: #333333;
+    background-color: #eeeeee;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.selection-place:focus,
+.selection-place:hover{
+    outline: none;
+    border: 1px solid #bbbbbb;
+}
+
+.selection-place option{
+    background: #ffffff;
+}
+
+.price-place{
+    margin: 1.5em auto;
+}
+
+.activity-selection-place{
+    margin: 0 3em 1.5em 3em;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cta-form{
+    width: 25%;
+    border-radius: 15px;
+    background: #08325c49;
+    border: none;
+    width: 25%;
+    height: 5vh;
+    font-family: 'Rubik', sans-serif;
+    font-size: medium;
+    color: white; 
+}
+
+.cta-form:hover{
+    background: #08325cc2;
+    transition: 0.7s ease all;
+    width: 30%;
+}
+.rectangle-1 {
+    background-color: 
+  #1f7be8;
+    border-radius: 80px;
+    height: 368px;
+    width: 437px;
+  }
+  .place {
+    color: var(--hint-of-red);
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-align:left;
+    min-height: 17px;
+    width: 248px;
+    
+  }
+  .title {
+  letter-spacing: 0;
+  min-height: 17px;
+  width: 248px;
+}
+.small {
+    font-size:xx-small;
+}
+
+.title-area {
+    order: -1 
+}
+
+.wrap {
+    display:flex;
+    flex-direction: column;
+}
+  
+  @import url("https://fonts.googleapis.com/css?family=Roboto:400");
+
